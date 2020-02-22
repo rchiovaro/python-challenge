@@ -51,11 +51,11 @@ print(f"Greatest Increase in Profits: {Months[MaxIncreaseMonth]} (${(str(MaxIncr
 print(f"Greatest Decrease in Profits: {Months[MaxDecreaseMonth]} (${(str(MaxDecreaseProfits))})")
 
 # set path for output file
-output_file = os.path.join("output.csv")
+output_file = os.path.join("output.txt")
 
 # open the output file, 
 with open(output_file, "w") as datafile:
-    writer = csv.writer(datafile)
+    writer = txt.writer(datafile)
 
     writer.write(print("Financial Analysis"))
     writer.write(print("----------------------------"))
